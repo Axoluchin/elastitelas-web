@@ -1,0 +1,44 @@
+---
+const products = [
+  {
+    title: "Telas",
+    desc: "Nuestras amplia gama en telas garantiza ofrecer soluciones para todo tipo de manufactura, nuestro compromiso con la excelencia se refleja en cada hilo",
+    image: "./images/telas.webp",
+    message: "",
+  },
+  {
+    title: "Elásticos",
+    desc: "Nuestros elásticos están fabricados con insumos de la mas alta calidad lo que garantiza su durabilidad, resistencia, manejo y comodidad.",
+    image: "./images/elasticos.webp",
+    message: "",
+  },
+  {
+    title: "Producto Terminado",
+    desc: "Ropa interior, fajas, pijamas, ropa deportiva, trajes de baño y mas; nuestro equipo esta siempre listo para diseñar y confeccionar cualquier idea",
+    image: "./images/producto-terminado.webp",
+    message: "",
+  },
+];
+---
+
+<section
+  class="max-w-screen-xl mx-8 xl:mx-auto bg-main-100 p-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 justify-stretch my-8"
+>
+  {
+    products.map(({ desc, image, message, title }) => (
+      <article class="text-main text-center group flex flex-col">
+        <div class="bg-gradient-to-b from-blue-500 to-blue-800 rounded-xl p-8 mb-4 overflow-hidden flex-1 grid place-content-center">
+          <img
+            src={image}
+            draggable="false"
+            class="m-auto object-contain group-hover:-translate-y-4 transition-transform w-full drop-shadow-xl group-last:rounded-2xl"
+          />
+        </div>
+        <div class="lg:h-40">
+          <h2 class="text-3xl font-bold ">{title}</h2>
+          <p>{desc}</p>
+        </div>
+      </article>
+    ))
+  }
+</section>

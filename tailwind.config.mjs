@@ -6,6 +6,7 @@ export default {
       colors: {
         main: {
           DEFAULT: "#1b29aa",
+          100: "#e8eaf6",
         },
       },
     },
