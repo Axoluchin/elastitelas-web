@@ -25,4 +25,34 @@ const { title } = Astro.props;
     <Footer />
   </body>
 </html>
-<style is:global></style>
+<style is:global>
+  @font-face {
+    font-family: "league";
+    src: url("/fonts/LeagueSpartan-Bold.otf");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "sanchez";
+    src: url("./fonts/Sanchezregular.otf");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: league;
+  }
+
+  p,
+  label,
+  input,
+  button,
+  li {
+    font-family: sanchez;
+  }
+</style>
