@@ -20,18 +20,18 @@ const links = [
     links: [
       {
         label: "Telas",
-        href: "",
-        target: "_blank",
+        href: "#telas",
+        target: undefined,
       },
       {
         label: "Elásticos",
-        href: "",
-        target: "_blank",
+        href: "#elasticos",
+        target: undefined,
       },
       {
         label: "Producto Terminado",
-        href: "",
-        target: "_blank",
+        href: "#producto-terminado",
+        target: undefined,
       },
     ],
   },
@@ -40,17 +40,17 @@ const links = [
     links: [
       {
         label: "Misión",
-        href: "",
+        href: "#nosotros",
         target: undefined,
       },
       {
         label: "Visión",
-        href: "",
+        href: "#nosotros",
         target: undefined,
       },
       {
         label: "Valores",
-        href: "",
+        href: "#valores",
         target: undefined,
       },
     ],
@@ -59,8 +59,8 @@ const links = [
 ---
 
 <footer class="bg-main text-slate-50">
-  <div class="mx-auto max-w-screen-xl px-4 pt-8 pb-16 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+  <div class="mx-auto max-w-screen-xl px-4 pt-8 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
       {
         links.map(({ links, title }) => (
           <div class="text-center sm:text-left">
@@ -81,6 +81,7 @@ const links = [
           </div>
         ))
       }
+      <img src="./images/telas-gris.webp" class="h-64 m-auto" />
     </div>
   </div>
 </footer>
