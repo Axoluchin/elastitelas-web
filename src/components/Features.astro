@@ -1,0 +1,47 @@
+---
+const features = [
+  {
+    title: "CALIDAD DE MATERIALES",
+    desc: "Fabricamos con pasión y dedicación asegurando la durabilidad y el rendimiento de nuestros productos.",
+    img: "./images/quality.webp",
+  },
+  {
+    title: "IMAGEN",
+    desc: "Chicas posando los productos",
+    img: "./images/girls-features.webp",
+  },
+  {
+    title: "ATENCIÓN PERSONALIZADA",
+    desc: "Te apoyamos en todo momento con nuestro equipo altamente especializado.",
+    img: "./images/custom.webp",
+  },
+  {
+    title: "ADAPTABILIDAD",
+    desc: "Nos adaptamos a las necesidades de cada cliente.",
+    img: "./images/adapt.webp",
+  },
+  {
+    title: "LLEGAMOS A TU NEGOCIO",
+    desc: "Envíos desde 24 horas y a a toda republica.",
+    img: "./images/delivery.webp",
+  },
+];
+---
+
+<section class="bg-gradient-to-b from-blue-700 to-blue-900 text-white p-4">
+  <div class="max-w-screen-xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+    {
+      features.map(({ desc, title, img }) =>
+        title === "IMAGEN" ? (
+          <img src={img} alt={desc} class="row-span-2 hidden lg:block" />
+        ) : (
+          <div class={`text-center`}>
+            <img src={img} alt={desc} class="mx-auto mb-2" />
+            <h3 class="text-2xl">{title}</h3>
+            <p class="sm:text-lg lg:text-xl">{desc}</p>
+          </div>
+        )
+      )
+    }
+  </div>
+</section>
