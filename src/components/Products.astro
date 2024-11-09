@@ -4,21 +4,21 @@ const products = [
     title: "Telas",
     desc: "Nuestras amplia gama en telas garantiza ofrecer soluciones para todo tipo de manufactura, nuestro compromiso con la excelencia se refleja en cada hilo",
     image: "./images/telas.webp",
-    message: "",
+    message: "Hola, estoy interesado en las telas que ofrecen",
     id: "telas",
   },
   {
     title: "Elásticos",
     desc: "Nuestros elásticos están fabricados con insumos de la mas alta calidad lo que garantiza su durabilidad, resistencia, manejo y comodidad.",
     image: "./images/elasticos.webp",
-    message: "",
+    message: "Hola, estoy interesado en los elásticos que ofrecen",
     id: "elasticos",
   },
   {
     title: "Producto Terminado",
     desc: "Ropa interior, fajas, pijamas, ropa deportiva, trajes de baño y mas; nuestro equipo esta siempre listo para diseñar y confeccionar cualquier idea",
     image: "./images/producto-terminado.webp",
-    message: "",
+    message: "Hola, estoy interesado en los productos que ofrecen",
     id: "producto-terminado",
   },
 ];
@@ -29,7 +29,11 @@ const products = [
 >
   {
     products.map(({ desc, image, message, title, id }) => (
-      <article id={id} class="text-main text-center group flex flex-col">
+      <a
+        href={`https://wa.me/15530830396/?text=${message}`}
+        id={id}
+        class="text-main text-center group flex flex-col"
+      >
         <div class="bg-gradient-to-b from-blue-500 to-blue-800 rounded-xl p-8 mb-4 overflow-hidden flex-1 grid place-content-center">
           <img
             src={image}
@@ -41,7 +45,7 @@ const products = [
           <h2 class="text-3xl font-bold ">{title}</h2>
           <p>{desc}</p>
         </div>
-      </article>
+      </a>
     ))
   }
 </section>
