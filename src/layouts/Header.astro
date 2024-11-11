@@ -1,6 +1,13 @@
+---
+import MenuSheet from "@/components/MenuSheet";
+---
+
 <header class="bg-main text-slate-50 px-4 py-2">
-  <div class="max-w-screen-xl m-auto flex gap-2 relative">
+  <div
+    class="max-w-screen-xl m-auto flex justify-between items-center gap-2 relative"
+  >
     <img src="./logotipo.webp" class="h-12" alt="logo de la empresa" />
+    <MenuSheet client:only />
     <img
       src="./logo.webp"
       alt="logo de la empresa"
