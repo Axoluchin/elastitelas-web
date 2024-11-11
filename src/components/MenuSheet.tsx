@@ -31,6 +31,11 @@ const list = [
     href: "#valores",
     target: undefined,
   },
+  {
+    label: "Contacto",
+    href: "#contacto",
+    target: undefined,
+  },
 ];
 
 export default function MenuSheet() {

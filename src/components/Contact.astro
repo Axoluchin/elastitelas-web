@@ -1,4 +1,4 @@
-<section class="bg-main">
+<section id="contacto" class="bg-main">
   <div class="grid md:grid-cols-2 max-w-screen-xl m-auto items-center">
     <form class="text-white w-full p-4 sm:p-8" id="form">
       <h2 class="text-4xl mb-8">Contacto</h2>
@@ -34,26 +34,26 @@
       loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
-
-  <script>
-    window.onload = () => {
-      const login = document.getElementById("form") as HTMLFormElement;
-
-      login.onsubmit = (e) => {
-        e.preventDefault();
-
-        const nombre = (document.getElementById("name") as HTMLInputElement)
-          .value;
-        const mensaje = (document.getElementById("message") as HTMLInputElement)
-          .value;
-
-        const saludo = nombre !== "" ? `Saludos soy ${nombre}` : "Hola";
-
-        window.open(
-          `https://wa.me/15530830396/?text=${saludo} ${mensaje}`,
-          "_blank"
-        );
-      };
-    };
-  </script>
 </section>
+
+<script>
+  window.onload = () => {
+    const login = document.getElementById("form") as HTMLFormElement;
+
+    login.onsubmit = (e) => {
+      e.preventDefault();
+
+      const nombre = (document.getElementById("name") as HTMLInputElement)
+        .value;
+      const mensaje = (document.getElementById("message") as HTMLInputElement)
+        .value;
+
+      const saludo = nombre !== "" ? `Saludos soy ${nombre}` : "Hola";
+
+      window.open(
+        `https://wa.me/15530830396/?text=${saludo} ${mensaje}`,
+        "_blank"
+      );
+    };
+  };
+</script>
