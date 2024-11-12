@@ -60,7 +60,7 @@ const links = [
 
 <footer class="bg-main text-slate-50">
   <div class="mx-auto max-w-screen-xl px-4 pt-8 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+    <div class="grid gap-8 grid-cols-2 lg:grid-cols-4">
       {
         links.map(({ links, title }) => (
           <div class="text-center sm:text-left">
@@ -69,7 +69,7 @@ const links = [
               {links.map(({ href, label, target }) => (
                 <li>
                   <a
-                    class=" transition hover:text-gray-700/75"
+                    class=" transition hover:text-white/50"
                     href={href}
                     target={target}
                   >
