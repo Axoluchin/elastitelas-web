@@ -5,22 +5,14 @@ import Products from "../components/Products.astro";
 import Contact from "../components/Contact.astro";
 import WhatsIcon from "../components/WhatsIcon.astro";
 import Features from "../components/Features.astro";
+import Covers from "@/components/Covers.astro";
+import Catalogo from "@/components/Catalogo.astro";
 ---
 
 <Layout title="Elastitelas Remakat">
-  <img
-    draggable="false"
-    src="./images/cover.webp"
-    class="hidden sm:block w-full"
-    alt="SOMOS EXPERTOS EN LA FABRICACIÓN Y CONFECCIÓN DE TEXTILES"
-  />
-  <img
-    draggable="false"
-    src="./images/cover-mobile.webp"
-    class="w-full sm:hidden"
-    alt="SOMOS EXPERTOS EN LA FABRICACIÓN Y CONFECCIÓN DE TEXTILES"
-  />
+  <Covers />
   <Products />
+  <Catalogo />
   <Features />
   <Nosotros />
   <Contact />
