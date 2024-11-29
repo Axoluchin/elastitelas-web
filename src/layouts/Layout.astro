@@ -17,10 +17,27 @@ const { title } = Astro.props;
     <meta charset="UTF-8" />
     <meta
       name="description"
-      content="Somos expertos en las confección de textiles"
+      content="Somos expertos en las confección de textiles, Somos una empresa 100% mexicana comprometida con la excelencia. Expertos en la fabricación, confección y comercialización de productos textiles. Más de 60 años nos avalan como una empresa seria, sólida y lista para cumplir las exigencias de nuestros clientes."
     />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <link rel="icon" href="/favicon.ico" />
+
+    <meta property="og:title" content={title} />
+    <meta
+      property="og:description"
+      content="Somos expertos en las confección de textiles, Somos una empresa 100% mexicana comprometida con la excelencia. Expertos en la fabricación, confección y comercialización de productos textiles."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/images/cover-mobile.webp" />
+
+    <meta name="twitter:title" content={title} />
+    <meta
+      name="twitter:description"
+      content="Somos expertos en las confección de textiles, Somos una empresa 100% mexicana comprometida con la excelencia. Expertos en la fabricación, confección y comercialización de productos textiles."
+    />
+    <meta name="twitter:image" content=" /images/cover-mobile.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+
     <title>{title}</title>
   </head>
   <body>
